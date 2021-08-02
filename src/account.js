@@ -1,7 +1,7 @@
+/* eslint-disable class-methods-use-this */
 class Account {
   constructor() {
     this.balance = 0;
-    this.date = new Date();
     this.transactions = [];
   }
 
@@ -12,10 +12,11 @@ class Account {
 
   debit(amount) {
     this.balance -= amount;
+    this.transactions.push(`${this.transactionDate()} || ${amount} || || ${this.balance}`);
   }
 
   transactionDate() {
-    return this.date.toLocaleDateString('en-UK');
+    return new Date().toLocaleDateString('en-UK');
   }
 }
 
