@@ -1,0 +1,24 @@
+{
+  "name": "bank-tech-test-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bank.js",
+  "scripts": {
+    "test": "jasmine",
+    "start": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frank-mck/bank-tech-test-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frank-mck/bank-tech-test-js/issues"
+  },
+  "homepage": "https://github.com/frank-mck/bank-tech-test-js#readme",
+  "devDependencies": {
+    "jasmine": "^3.8.0"
+  }
+}
