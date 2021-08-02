@@ -1,22 +1,24 @@
-/* eslint-disable class-methods-use-this */
-class Account {
-  constructor() {
+const Transaction = require('./transaction');
+
+class Account extends Transaction {
+  constructor(balance) {
+    super(balance);
     this.balance = 0;
     this.transactions = [];
   }
 
   credit(amount) {
     this.balance += amount;
-    this.transactions.push(`${this.transactionDate()} || || ${amount} || ${this.balance}`);
+    this.addTransaction(this.deposit(amount));
   }
 
   debit(amount) {
     this.balance -= amount;
-    this.transactions.push(`${this.transactionDate()} || ${amount} || || ${this.balance}`);
+    this.addTransaction(this.withdraw(amount));
   }
 
-  transactionDate() {
-    return new Date().toLocaleDateString('en-UK');
+  addTransaction() {
+    this.transactions.push(this.log + this.balance);
   }
 }
 
