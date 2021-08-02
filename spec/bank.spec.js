@@ -6,7 +6,7 @@ describe('Bank', () => {
   });
 
   describe('bank account', () => {
-    it ('has zero starting balance', () => {
+    test ('has zero starting balance', () => {
       expect(bank.balance).toEqual(0);
     });
   });
