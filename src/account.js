@@ -1,6 +1,6 @@
-const Transaction = require('./transaction');
+const transaction = require('./transaction');
 
-class Account extends Transaction {
+class Account extends transaction {
   constructor(balance) {
     super(balance);
     this.balance = 0;
@@ -19,6 +19,11 @@ class Account extends Transaction {
 
   addTransaction() {
     this.transactions.push(this.log + this.balance);
+  }
+
+  printStatement() {
+    this.transactions.unshift('date || credit || debit || balance');
+    return this.transactions.join('\n');
   }
 }
 

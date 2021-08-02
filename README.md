@@ -20,3 +20,6 @@ I want to print my account statement
 
 ```
 
+## CRC Diagram
+
+<img alt ='CRC Diagram' src =''>
