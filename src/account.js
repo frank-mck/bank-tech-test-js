@@ -13,8 +13,12 @@ class Account extends transaction {
   }
 
   debit(amount) {
-    this.balance -= amount;
-    this.addTransaction(this.withdraw(amount));
+    if (this.balance - amount < 0) {
+      throw new Error('amount exeeds account balance!');
+    } else {
+      this.balance -= amount;
+      this.addTransaction(this.withdraw(amount));
+    }
   }
 
   addTransaction() {
