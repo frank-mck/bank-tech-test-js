@@ -1,6 +1,4 @@
 /* eslint-disable */
-const Transaction = require('./transaction');
-
 class Account {
   constructor(transaction = new Transaction()) {
     this.balance = 0;
@@ -27,9 +25,7 @@ class Account {
   }
 
   printStatement() {
-    this.transactions.unshift('date || credit || debit || balance');
-    return this.transactions.join('\n')
+    this.transactions.push('date || credit || debit || balance');
+    return this.transactions.reverse().forEach(log => console.log(log));
   }
 }
-
-module.exports = Account;

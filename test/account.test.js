@@ -28,7 +28,7 @@ describe('Account', () => {
     account.debit(200);
     account.credit(500);
     account.debit(200);
-    expect(account.printStatement()).toEqual(`date || credit || debit || balance\n${date} || 500 || || 500\n${date} || || 200 || 300\n${date} || 500 || || 800\n${date} || || 200 || 600`);
+    expect(account.printStatement()).toEqual(`date || credit || debit || balance\n${date} || 500.00 || || 500.00\n${date} || || 200.00 || 300.00\n${date} || 500.00 || || 800.00\n${date} || || 200.00 || 600.00`);
   });
 
   test('customer cannot withdraw amount that exeeds account balance', () => {
