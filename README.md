@@ -75,4 +75,4 @@ account.printStatement();
 
 ## Console Output 
 
-<img alt ='console results' src ='' >
+<img alt ='console results' src ='https://raw.githubusercontent.com/frank-mck/bank-tech-test-js/attempt-2/img/Screenshot%202021-08-04%20at%2015.14.21.png' >
