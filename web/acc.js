@@ -1,6 +1,4 @@
 /* eslint-disable */
-const Transaction = require('./transaction');
-
 class Account {
   constructor(transaction = new Transaction()) {
     this.balance = 0;
@@ -31,5 +29,3 @@ class Account {
     return this.transactions.forEach(log => console.log(log));
   }
 }
-
-module.exports = Account;

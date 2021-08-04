@@ -1,5 +1,4 @@
 /* eslint-disable */
-
 class Transaction {
   constructor() {
     this.log = undefined;
@@ -17,5 +16,3 @@ class Transaction {
     return new Date().toLocaleDateString('en-UK');
   }
 }
-
-module.exports = Transaction;
