@@ -48,7 +48,7 @@ I want to print my account statement
 
 ## Passing tests with Jest
 
-<img alt = 'test results' src ='https://raw.githubusercontent.com/frank-mck/bank-tech-test-js/attempt-2/img/Screenshot%202021-08-03%20at%2009.42.32.png'>
+<img alt = 'test results' src ='https://raw.githubusercontent.com/frank-mck/bank-tech-test-js/main/img/Screenshot%202021-08-03%20at%2009.42.32.png'>
 
 
 ## How to use
@@ -76,3 +76,5 @@ account.printStatement();
 ## Console Output 
 
 <img alt ='console results' src ='https://raw.githubusercontent.com/frank-mck/bank-tech-test-js/attempt-2/img/Screenshot%202021-08-04%20at%2015.14.21.png' >
+
+
