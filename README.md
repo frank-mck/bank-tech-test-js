@@ -56,7 +56,8 @@ I want to print my account statement
 Clone this repo to your local computer, then go to the project directory
 ```
 git clone https://github.com/frank-mck/bank-tech-test-js.git
-cd bank-tech-test
+
+cd bank-tech-test-js
 ```
 
 ### Use the Javascript console to interact with the code
