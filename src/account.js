@@ -28,7 +28,7 @@ class Account {
 
   printStatement() {
     this.transactions.unshift('date || credit || debit || balance');
-    return this.transactions.forEach(log => console.log(log));
+    return this.transactions.join('\n')
   }
 }
 
