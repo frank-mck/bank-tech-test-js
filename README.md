@@ -22,7 +22,9 @@ date || credit || debit || balance
 13/01/2012 || 2000.00 || || 3000.00
 10/01/2012 || 1000.00 || || 1000.00
 
-## User stories
+## My Solution
+
+### User stories
 ```
 As a customer bank account holder
 To make sure I have enough money to pay bills
